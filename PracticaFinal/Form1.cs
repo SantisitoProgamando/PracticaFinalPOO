@@ -280,5 +280,10 @@ namespace PracticaFinal
                 .ToList();
             dgvResumen.DataSource = datos;
         }
+
+        private void btnPruebaGit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esto es una prueba de git");
+        }
     }
 }

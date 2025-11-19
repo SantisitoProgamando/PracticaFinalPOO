@@ -46,6 +46,7 @@
             dgvOrdenados = new DataGridView();
             dgvResumen = new DataGridView();
             btnPruebaGit = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvPendientes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvPagados).BeginInit();
@@ -220,7 +221,7 @@
             // 
             // btnPruebaGit
             // 
-            btnPruebaGit.Location = new Point(810, 241);
+            btnPruebaGit.Location = new Point(847, 213);
             btnPruebaGit.Name = "btnPruebaGit";
             btnPruebaGit.Size = new Size(129, 69);
             btnPruebaGit.TabIndex = 17;
@@ -228,11 +229,19 @@
             btnPruebaGit.UseVisualStyleBackColor = true;
             btnPruebaGit.Click += btnPruebaGit_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(831, 298);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(145, 27);
+            textBox1.TabIndex = 18;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1299, 483);
+            Controls.Add(textBox1);
             Controls.Add(btnPruebaGit);
             Controls.Add(dgvResumen);
             Controls.Add(dgvOrdenados);
@@ -284,5 +293,6 @@
         private DataGridView dgvOrdenados;
         private DataGridView dgvResumen;
         private Button btnPruebaGit;
+        private TextBox textBox1;
     }
 }

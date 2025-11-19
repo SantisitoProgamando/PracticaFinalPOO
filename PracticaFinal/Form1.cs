@@ -283,7 +283,14 @@ namespace PracticaFinal
 
         private void btnPruebaGit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Esto es una prueba de git");
+            string nombre = Interaction.InputBox("Ingrese su nombre");
+            try
+            {
+                if (String.IsNullOrEmpty(nombre))
+                    throw new Exception("Ingrese un nombre valido");
+                textBox1.Text = nombre;
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }
